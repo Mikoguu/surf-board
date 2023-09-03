@@ -1,0 +1,58 @@
+.burger-menu {
+  display: none;
+
+  @include tablet {
+    fill: $white;
+    display: block;
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.menu-modal {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333537;
+  z-index: 10000;
+  text-align: center;
+  padding: 16.6rem 16rem 0rem 16rem;
+  a {
+    color: $white;
+  }
+  
+  @include mobile {
+    padding-right: 23rem;
+    padding-left: 23rem;
+  }
+}
+
+.menu-modal__list {
+  font-size: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.menu-modal__close {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.close-icon {
+  fill: $white;
+}
+
+

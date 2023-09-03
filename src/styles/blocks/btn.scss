@@ -1,0 +1,35 @@
+.btn {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-decoration: none;
+  width: 15.6rem;
+  height: 6rem;
+  padding: 2rem 4rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  z-index: 1000;
+
+  &--theme--yellow {
+    background-color: $yellow;
+    color: $black;
+
+    &:hover {
+      background-color: $black;
+      color: $yellow;
+    }
+  }
+
+  &--theme--transparent {
+    background-color: transparent;
+    border: 0;
+    color: #FFF;
+
+    &:hover {
+      color: black;
+    }
+  }
+}

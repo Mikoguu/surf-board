@@ -1,0 +1,28 @@
+.form-modal {
+display: none;
+
+
+  &__content {
+    background-color: $white;
+    min-width: 31rem;
+    height: 17.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    
+  }
+
+  &__msg {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: black;
+  }
+  
+}
+
+.error-modal p {
+  color: rgb(198, 44, 44);
+}
+

@@ -1,0 +1,88 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(./img/top-bg.png) #1968B1 0px -15rem/100% 137% no-repeat;
+  box-shadow: 0rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border: 0.1rem solid #000;
+  height: 100%;
+  min-height: 6.5rem;
+  color: $white;
+
+  @include tablet {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./img/tablet-hero-bg.png) #1968B1 0rem 8rem no-repeat;
+    box-shadow: 0rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);;
+    background-size: cover;
+  }
+
+  @include mobile {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./img/mobile-hero-bg.png) #1968B1 no-repeat;
+    box-shadow: 0rem 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);;
+    background-size: cover;
+  }
+
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2.8rem 0 6rem;
+
+  @include tablet {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.hero__text-section {
+  margin-bottom: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  justify-content: center;
+
+  @include tablet {
+    align-items: center;
+    margin-top: 40rem;
+  }
+}
+
+.hero__title {
+  max-width: 45%;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  min-height: 1.7rem;
+  margin-bottom: 1.7rem;
+
+  @include tablet {
+    text-align: center;
+    max-width: 100%;
+    min-height: 0;
+    margin-bottom: 0.9px;
+  }
+
+  @include mobile {
+    font-size: 3rem;
+  }
+
+}
+
+.hero__subtitle {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+
+  @include tablet {
+    text-align: center;
+  }
+}
+
+.hero__icons-section {
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}

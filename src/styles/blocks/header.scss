@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12rem;
+  z-index: 1;
+
+  @include tablet {
+    margin-bottom: 25rem;
+    padding: 2.5rem 3.6rem 2.5rem;
+    background-color: #1968B1;
+    position: absolute;
+    width: 110%;
+    right: -3rem;
+
+  }
+}
+
+.contacts-number.header__contacts-number {
+  white-space: nowrap;
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.logo__icon {
+  fill: $white;
+  width: 6.5rem;
+  height: 5rem;
+}
+
+.contacts__icon {
+  fill: $white;
+  height: 1.5rem;
+  width: 1.5rem;
+}
