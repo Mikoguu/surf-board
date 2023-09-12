@@ -1,0 +1,37 @@
+
+
+.benefits {
+  display: flex;
+  gap: 5.2rem;
+  margin-bottom: 5.4rem;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.benefits__item {
+  flex: 1;
+  &:before {
+    content: url(./img/separator.png);
+    position: absolute;
+    transform: translate(280%,200%);
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+
+

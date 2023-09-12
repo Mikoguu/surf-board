@@ -1,0 +1,24 @@
+$containerWidthDesktop: 1100px;
+$containerWidthTablet: 768px;
+$containerWidthMobile: 480px;
+$baseFontSize: 10px;
+
+//breakpoints
+
+$tablet: 768px;
+$mobile: 480px;
+
+// colors
+
+$grey: #666;
+$yellow: #FFD517;
+$white: #FFF;
+$black: #000;
+$lightGrey: #F2F5F4;
+
+
+@import "./blocks/media.scss";
+@import "./blocks/*.scss";
+@import "./blocks/layout.scss"
+
+

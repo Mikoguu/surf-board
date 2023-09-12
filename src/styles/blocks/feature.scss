@@ -1,0 +1,16 @@
+.feature {
+  p {
+    width: 9rem;
+    height: 3.6rem;
+    line-height: 112.5%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $white;
+  }
+}
+
+.feature__icon {
+  width: 4.1rem;
+  height: 4.1rem;
+  fill: $white;
+}

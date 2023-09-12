@@ -1,0 +1,31 @@
+.menu {
+  font-size: 1.8rem;
+  margin: 0 30px;
+  padding-top: 3px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-weight: 700;
+  white-space: nowrap;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
